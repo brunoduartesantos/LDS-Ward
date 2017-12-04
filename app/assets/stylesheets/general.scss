@@ -1,4 +1,19 @@
+// HTML elements ----------
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
+}
+
+// Custom elements ----------
+
+.clear {
+  clear: both;
+}
+
+.container {
+  clear: both;
+  width: 80%;
+  max-width: 980px;
+  margin: 0 auto;
 }
