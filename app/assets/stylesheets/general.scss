@@ -1,3 +1,5 @@
+@import "variables";
+
 // HTML elements ----------
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,4 +42,20 @@ h6 {
   width: 80%;
   max-width: 980px;
   margin: 0 auto;
+}
+
+.titleHeader {
+  clear: both;
+  background-color: $light_gray;
+  border-bottom: 1px solid $medium_gray;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $hard_gray;
+  }
 }
