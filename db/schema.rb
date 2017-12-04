@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204143042) do
+ActiveRecord::Schema.define(version: 20171204144513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "histories", force: :cascade do |t|
+    t.bigint "ward_id"
+    t.string "title"
+    t.string "summary"
+    t.string "post"
+    t.string "publication"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ward_id"], name: "index_histories_on_ward_id"
+  end
 
   create_table "wards", force: :cascade do |t|
     t.string "name"
@@ -21,4 +32,5 @@ ActiveRecord::Schema.define(version: 20171204143042) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "histories", "wards"
 end
