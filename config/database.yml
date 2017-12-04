@@ -1,0 +1,19 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  port: 5432
+  username: postgres
+
+development:
+  <<: *default
+  database: lds_ward_development
+
+test:
+  <<: *default
+  database: lds_ward_test
+
+production:
+  <<: *default
+  database: lds_ward_production
