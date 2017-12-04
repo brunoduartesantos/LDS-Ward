@@ -7,41 +7,28 @@
 
 <div class="container">
 
-  <br><br><br><br>
-
-  <ul class="list_box">
-    <% for i in 1..10 %>
-      <li><span>Mandaremus de varias offendit.</span></li>
-    <% end %>
-  </ul>
-
-  <br><br><br><br>
+  <br>
 
   <p id="notice"><%= notice %></p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+  <ul class="list_box">
+    <li><span>Alas cadastradas no sistema</span></li>
 
-    <tbody>
-      <% @wards.each do |ward| %>
-        <tr>
-          <td><%= ward.name %></td>
-          <td><%= link_to 'Show', ward %></td>
-          <td><%= link_to 'Edit', edit_ward_path(ward) %></td>
-          <td><%= link_to 'Destroy', ward, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    <% if @wards.count == 0 %>
+      <li><span>Nenhuma ala encontrada</span></li>
+    <% end %>
 
-  <br>
+    <% @wards.each do |ward| %>
+      <li>
+        <span><%= ward.name %></span>
+        <%= link_to raw('<i class="fa fa-trash" aria-hidden="true"></i>Destroy'), ward, method: :delete, data: { confirm: 'Are you sure?' }, class: 'float_right icon_link' %>
+        <%= link_to raw('<i class="fa fa-pencil" aria-hidden="true"></i>Edit'), edit_ward_path(ward), class: 'float_right icon_link' %>
+        <%= link_to raw('<i class="fa fa-info" aria-hidden="true"></i>Show'), ward, class: 'float_right icon_link' %>
+      </li>
+    <% end %>
+    <li><%= link_to raw('<i class="fa fa-plus" aria-hidden="true"></i>New Ward'), new_ward_path, class: 'icon_link' %></li>
+  </ul>
 
-  <%= link_to 'New Ward', new_ward_path %>
 </div>
 
 

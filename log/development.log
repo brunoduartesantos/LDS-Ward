@@ -754,3 +754,187 @@ Processing by WardsController#index as HTML
 Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:07:58 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.5ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 80.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:12:09 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:15:09 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:15:29 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.6ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:15:40 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:16:20 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:16:56 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:16:58 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.4ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:24:37 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: font-awesome-sprockets.
+Load paths:
+  /Users/brunopereira/projects/LDS/lds-ward/app/assets/config
+  /Users/brunopereira/projects/LDS/lds-ward/app/assets/images
+  /Users/brunopereira/projects/LDS/lds-ward/app/assets/javascripts
+  /Users/brunopereira/projects/LDS/lds-ward/app/assets/stylesheets
+  /Users/brunopereira/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/brunopereira/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/brunopereira/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/brunopereira/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/brunopereira/projects/LDS/lds-ward/node_modules):
+     6:     <%= csrf_meta_tags %>
+     7:     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3336874515168821386_70228169765540'
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:25:30 -0200
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.9ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 2178ms (Views: 2152.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:30:15 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 481ms (Views: 478.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:30:40 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:30:45 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:31:20 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:31:33 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.6ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 470ms (Views: 467.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:33:08 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:34:21 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:34:37 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.6ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:34:44 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.3ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-04 18:53:24 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[35m (19.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "wards"[0m
+  [1m[36mWard Load (0.5ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 49ms (Views: 27.6ms | ActiveRecord: 19.4ms)
+
+

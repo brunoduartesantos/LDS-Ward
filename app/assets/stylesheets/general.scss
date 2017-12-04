@@ -31,6 +31,23 @@ h6 {
   font-size: 20px;
 }
 
+a {
+  color: $hard_blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.icon_link {
+    padding: 0 5px;
+
+    i {
+      padding-right: 5px;
+    }
+  }
+}
+
 // Custom elements ----------
 
 .clear {
@@ -68,6 +85,10 @@ h6 {
   text-align: center;
 }
 
+.float_right {
+  float: right;
+}
+
 .list_box {
   padding: 0;
   margin: 0;
@@ -81,6 +102,7 @@ h6 {
     padding: 8px 10px;
     color: $hard_gray;
     font-size: 14px;
+    clear: both;
 
     p {
       display: inline;
