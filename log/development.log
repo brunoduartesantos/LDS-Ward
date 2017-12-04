@@ -5,3 +5,82 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 205ms (Views: 9.7ms)
 
 
+  [1m[35m (39.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (23.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1372538079072927795)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWards (20171204143042)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (34.6ms)[0m  [1m[35mCREATE TABLE "wards" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171204143042"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-04 14:38:26.898746"], ["updated_at", "2017-12-04 14:38:26.898746"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1372538079072927795)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-12-04 12:39:05 -0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (7.1ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 453ms (Views: 429.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/wards/new" for 127.0.0.1 at 2017-12-04 12:39:09 -0200
+Processing by WardsController#new as HTML
+  Rendering wards/new.html.erb within layouts/application
+  Rendered wards/_form.html.erb (15.7ms)
+  Rendered wards/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 50ms (Views: 31.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/wards/new" for 127.0.0.1 at 2017-12-04 12:41:15 -0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WardsController#new as HTML
+  Rendering wards/new.html.erb within layouts/application
+  Rendered wards/_form.html.erb (1.6ms)
+  Rendered wards/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 18.1ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/wards" for 127.0.0.1 at 2017-12-04 12:41:17 -0200
+Processing by WardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LmaRX5Ybn5GES06a1ZjI0UIDsJjapHQ5G0Hg3uimAVir3myz4cNnCZ3ydu9Sq2piTBMWmP9/acRThheUhs6WCw==", "ward"=>{"name"=>""}, "commit"=>"Create Ward"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering wards/new.html.erb within layouts/application
+  Rendered wards/_form.html.erb (1.4ms)
+  Rendered wards/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/wards" for 127.0.0.1 at 2017-12-04 12:41:28 -0200
+Processing by WardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lZKRT61b9ceJ9+/Ez+UO0VTrarP9UGcsn813xf/qmncbiuBh7u1f8tjH0hEZAbdV+M6R1hGnWAWkCkzN5boLMg==", "ward"=>{"name"=>"Interlagos"}, "commit"=>"Create Ward"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.5ms)[0m  [1m[32mINSERT INTO "wards" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Interlagos"], ["created_at", "2017-12-04 14:41:28.921744"], ["updated_at", "2017-12-04 14:41:28.921744"]]
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/wards/1
+Completed 302 Found in 23ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/wards/1" for 127.0.0.1 at 2017-12-04 12:41:28 -0200
+Processing by WardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWard Load (6.8ms)[0m  [1m[34mSELECT  "wards".* FROM "wards" WHERE "wards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering wards/show.html.erb within layouts/application
+  Rendered wards/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 15.5ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/wards" for 127.0.0.1 at 2017-12-04 12:41:31 -0200
+Processing by WardsController#index as HTML
+  Rendering wards/index.html.erb within layouts/application
+  [1m[36mWard Load (0.5ms)[0m  [1m[34mSELECT "wards".* FROM "wards"[0m
+  Rendered wards/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
