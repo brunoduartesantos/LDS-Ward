@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ward: one
+  title: MyString
+  summary: MyString
+  post: MyString
+  publication: MyString
+
+two:
+  ward: two
+  title: MyString
+  summary: MyString
+  post: MyString
+  publication: MyString
